@@ -1,0 +1,2 @@
+-- Sample Data for Local Development
+-- (Insert into auth.users, profiles, news, and global chat)
