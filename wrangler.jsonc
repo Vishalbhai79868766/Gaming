@@ -12,5 +12,8 @@
   },
   "observability": {
     "enabled": true
+  },
+  "build": {
+    "command": "npx --yes @opennextjs/cloudflare build --dangerouslyUseUnsupportedNextVersion"
   }
 }
