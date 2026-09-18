@@ -1,3 +1,12 @@
-import { defineCloudflareConfig } from "@opennextjs/cloudflare";
+// @ts-nocheck
+   const config = {
+     default: {
+       override: {
+         wrapper: "cloudflare-node",
+         converter: "edge",
+         proxyExternalRequest: "fetch",
+       },
+     },
+   };
 
-   export default defineCloudflareConfig({});
+   export default config;
