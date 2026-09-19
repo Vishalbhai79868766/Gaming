@@ -1,3 +1,15 @@
-import { defineCloudflareConfig } from "@opennextjs/cloudflare";
+/** @type {import('next').NextConfig} */
+   const nextConfig = {
+     output: 'export',
+     images: {
+       unoptimized: true,
+       remotePatterns: [
+         {
+           protocol: 'https',
+           hostname: '**',
+         },
+       ],
+     },
+   };
 
-export default defineCloudflareConfig({});
+   export default nextConfig;
